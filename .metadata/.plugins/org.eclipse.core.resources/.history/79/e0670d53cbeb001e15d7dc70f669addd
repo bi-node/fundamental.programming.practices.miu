@@ -1,0 +1,39 @@
+package easy;
+
+public class MergeArray {
+	public static void main(String[] args) {
+		int[] a= {0,3,5,8,10,0,0,0,0};
+		int[] b= {1,2,7,9};
+		int m=5, n=4;
+		mergeArray(a, m, b, n);
+		
+	}
+	
+	public static void mergeArray(int[] nums1, int m, int[] nums2, int n)
+	{
+		for(int i=0; i<m; i++)
+		{
+			for(int j=0; j<n;j++)
+			{
+				if(nums1[i]>nums2[j])
+				{
+					nums1[i]=nums2[j];
+					int temp=nums2[j];
+					int k=j+1;
+					while(temp>nums2[k])
+					{
+						int temp2=nums2[k-1];
+						if(nums2[k]<temp2)
+						{
+							temp2=nums2[k-1];
+							nums2[k-1]=nums2[k];
+							nums2[k]=temp2;
+						}
+						k++;
+					}
+				}
+			}
+		}
+	}
+
+}

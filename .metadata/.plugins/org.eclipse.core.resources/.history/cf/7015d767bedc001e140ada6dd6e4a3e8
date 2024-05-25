@@ -1,0 +1,9 @@
+package oopproblem;
+
+class HatMaker {
+     String figure = "/\\";
+    
+    public String getFigure() {
+        return figure;
+    }
+}

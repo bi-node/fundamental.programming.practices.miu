@@ -1,0 +1,42 @@
+package easy;
+
+/**
+ * Definition for a binary tree node. public class TreeNode { int val; TreeNode
+ * left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; }
+ * TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left
+ * = left; this.right = right; } }
+ */
+
+public class BinaryTree {
+	TreeNode root;
+	
+	public class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		TreeNode() {
+		}
+
+		TreeNode(int val) {
+			this.val = val;
+		}
+
+		TreeNode(int val, TreeNode left, TreeNode right) {
+			this.val = val;
+			this.left = left;
+			this.right = right;
+		}
+		public void insert(int data)
+		{
+			
+		}
+
+	}
+
+//end of Tree Node
+	public static void main(String[] args) {
+		BinaryTree bt = new BinaryTree();
+
+	}
+}

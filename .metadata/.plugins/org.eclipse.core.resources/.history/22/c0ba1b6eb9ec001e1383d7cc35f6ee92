@@ -1,0 +1,17 @@
+package easy;
+
+public class AddLinkedList {
+	public static void main(String[] args) {
+		Node n1=new Node();
+		Node n2=new Node();
+		n1.add(2);
+		n1.add(4);
+		n1.add(3);
+		n2.add(5);
+		n2.add(6);
+		n2.add(4);
+		n1.display();
+		
+	}
+
+}

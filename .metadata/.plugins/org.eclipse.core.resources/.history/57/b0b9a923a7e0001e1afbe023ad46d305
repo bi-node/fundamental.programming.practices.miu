@@ -1,0 +1,29 @@
+package linklist;
+//Node 
+class Nodal{
+	int data;
+	Nodal next;
+	
+	
+	
+	public void add(int x)
+	{
+		Nodal n=new Nodal();
+		n.data=x;
+		n.next=null;
+		
+	}
+}
+
+//Linked List class
+public class LinkedList{
+	
+	
+	public static void main(String[] args) {
+	Nodal node=new Nodal();
+	node.add(34);
+	node.add(45);
+	System.out.println(node.data);
+		
+	}
+}

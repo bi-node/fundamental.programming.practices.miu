@@ -1,0 +1,9 @@
+package oopproblem;
+
+class VeeMaker {
+    String figure = "\\/";
+    
+    public String getFigure() {
+        return figure;
+    }
+}

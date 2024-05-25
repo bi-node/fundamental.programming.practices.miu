@@ -1,0 +1,21 @@
+package recursion;
+
+public class Minimum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr= {42,5,53,53,23,2,5};
+		
+
+	}
+	
+	static int min(int[] arr, int len)
+	{
+		if(len==0)
+			return arr[0];
+		else {
+			return Math.min(arr[len-1], min(arr, len-1));
+		}
+	}
+
+}

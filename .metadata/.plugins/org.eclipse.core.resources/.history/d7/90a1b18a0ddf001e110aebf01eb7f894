@@ -1,0 +1,18 @@
+package recursion7;
+
+public class Fibonacci {
+	public static void main(String[] args) {
+		Fibonacci fib = new Fibonacci();
+		System.out.println(fib.fibonacci(20));
+
+	}
+	
+	int fibonacci(int n)
+	{
+		if(n==0 && n==1) return 1;
+		else {
+			return n +fibonacci(n-1);
+		}
+	}
+
+}

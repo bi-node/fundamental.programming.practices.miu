@@ -1,0 +1,35 @@
+package dotjava;
+
+
+import javax.swing.*;
+
+public class Login extends JFrame {
+	Login() {
+
+		setBounds(0, 0, 1600, 800);
+		setLayout(null);
+		setVisible(true);
+		//getContentPane().setBackground(Color.cyan);
+		
+		JLabel lbl=new JLabel();
+		ImageIcon i1=new ImageIcon(this.getClass().getResource("hotel8.jpg"));
+		lbl.setIcon(i1);
+		lbl.setBounds(0,0,800,500);
+		add(lbl);
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Login();
+
+	}
+
+}

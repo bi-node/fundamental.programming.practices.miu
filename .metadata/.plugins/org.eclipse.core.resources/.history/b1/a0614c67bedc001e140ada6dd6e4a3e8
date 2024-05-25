@@ -1,0 +1,10 @@
+package oopproblem;
+
+class ParallelMaker {
+    
+    String figure = "||";
+    
+    public String getFigure() {
+        return figure;
+    }
+}

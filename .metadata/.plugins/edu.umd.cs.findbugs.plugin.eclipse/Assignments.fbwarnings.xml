@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1710102569789" analysisTimestamp="1710102569358" release="">
+  <Project projectName="Assignments">
+    <Jar>G:\My Drive\FPP\Assignments\bin\assignment4_3\employeeinfo\Account.class</Jar>
+    <AuxClasspathEntry>G:\My Drive\FPP\Assignments\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>G:\My Drive\FPP\junit-4.10.jar</AuxClasspathEntry>
+    <SrcDir>G:\My Drive\FPP\Assignments\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 9 Mar 2024 19:01:53 -0600" total_classes="1" referenced_classes="2" total_bugs="0" total_size="24" num_packages="1" java_version="21" vm_version="21+35-LTS-2513" cpu_seconds="0.12" clock_seconds="0.43" peak_mbytes="657.02" alloc_mbytes="2048.00" gc_seconds="0.00">
+    <PackageStats package="assignment4_3.employeeinfo" total_bugs="0" total_types="1" total_size="24">
+      <ClassStats class="assignment4_3.employeeinfo.Account" sourceFile="Account.java" interface="false" size="24" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="230" invocations="2" avgMicrosecondsPerInvocation="115229" maxMicrosecondsPerInvocation="222582" standardDeviationMircosecondsPerInvocation="107352"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="55" invocations="145" avgMicrosecondsPerInvocation="383" maxMicrosecondsPerInvocation="21373" standardDeviationMircosecondsPerInvocation="1834"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="23" invocations="5" avgMicrosecondsPerInvocation="4648" maxMicrosecondsPerInvocation="22572" standardDeviationMircosecondsPerInvocation="8963"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1710102569789" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

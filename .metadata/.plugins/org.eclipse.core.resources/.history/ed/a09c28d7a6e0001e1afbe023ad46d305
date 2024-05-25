@@ -1,0 +1,26 @@
+package linklist;
+//Node 
+class Nodal{
+	int data;
+	Nodal next;
+	Nodal header=null;
+	
+	public void add(int data)
+	{
+		Nodal n = null;
+		if(header==null)
+		{
+			n.next=null;
+			n.data=data;
+		}
+	}
+}
+
+//Linked List class
+public class LinkedList{
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,39 @@
+import java.util.HashMap;
+
+public class Subarray {
+
+    public static void main(String[] args) {
+        String[] arr1 = {"A", "C", "E"};
+        String[] arr2 = {"A", "B", "C", "D", "E"};
+        String[] arr3 = {"A", "C", "F"};
+        System.out.println("Is arr1 a subarray of arr2? (Expected answer: yes) " + isSubArray(arr1, arr2));
+        System.out.println("Is arr3 a subarray of arr2? (Expected answer: no) " + isSubArray(arr3, arr2));
+    }
+
+    /**
+     * Returns true if every string in arr1 is contained
+     * in arr2. Assume that neither array is null.
+     */
+    public static boolean isSubArray(String[] arr1, String[] arr2) {
+        // Create a HashMap to store frequencies of elements in arr2
+        HashMap<String, Integer> map = new HashMap<>();
+        
+        // Populate the HashMap with frequencies of elements in arr2
+        for (String element : arr2) {
+            map.put(element, map.getOrDefault(element, 0) + 1);
+        }
+        
+        // Check if every element in arr1 is present in arr2
+        for (String element : arr1) {
+            // If element is not present or its frequency is 0, return false
+            if (!map.containsKey(element) || map.get(element) == 0) {
+                return false;
+            }
+            // Decrement the frequency of the element in the map
+            map.put(element, map.get(element) - 1);
+        }
+        
+        // If all elements in arr1 are present in arr2, return true
+        return true;
+    }
+}

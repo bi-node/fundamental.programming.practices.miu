@@ -1,0 +1,52 @@
+package dotjava;
+import java.awt.*;
+import javax.swing.*;
+
+
+public class Login extends JFrame  {
+    
+
+   /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+
+Login() {
+       setSize(900,400);
+       setLocation(350,200);
+       setLayout(null);             //SETTING layout
+      
+       getContentPane().setBackground(Color.white);
+       //Panel inside layout
+       JPanel p1=new JPanel();
+       p1.setBackground(new Color(0, 184, 230));
+       p1.setBounds(0,0,400,400);
+       p1.setLayout(null);
+       add(p1);
+       
+      /* //inserting image of login page
+       ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("hotel8.jpg"));
+       Image i2=i1.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT);
+       ImageIcon i3=new ImageIcon(i2);
+       JLabel image=new JLabel(i3);
+       image.setBounds(100,120, 200,200);
+       p1.add(image);*/
+       
+      
+        setVisible(true);
+       
+       
+    }
+   
+  
+    public static void main(String[] args){
+        new Login();
+        
+        }
+}
+
+
+
+
+	

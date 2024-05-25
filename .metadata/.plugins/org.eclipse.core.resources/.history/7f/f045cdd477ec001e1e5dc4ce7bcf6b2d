@@ -1,0 +1,25 @@
+package easy;
+
+public class Test {
+	public static void main(String[] args) {
+		Test t=new Test();
+		System.out.println(t.gcdOfStrings("ABABABC", "AB"));
+		
+	}
+public String gcdOfStrings(String str1, String str2) {
+	int lenA=str1.length();
+	int lenB=str2.length();
+	if(lenA%lenB!=0) return "";
+	for(int i=0; i<lenA; i+=lenB)
+	{
+		
+		if(!str2.equals(str1.substring(i,i+lenB)))
+		{ 
+			return "";
+		}
+	}
+	return str2;
+        
+    }
+
+}

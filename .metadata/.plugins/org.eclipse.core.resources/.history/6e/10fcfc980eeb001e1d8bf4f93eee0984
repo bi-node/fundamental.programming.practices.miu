@@ -1,0 +1,24 @@
+package day1;
+
+public class Test {
+	public static void main(String[] args) {
+		System.out.println(squareRoot(32423423));
+	}
+
+	public static int squareRoot(int x) {
+		
+        int tryNo = x / 2;
+        
+        
+        while (true) {
+            int newTryNo = (tryNo + x / tryNo) / 2;
+            if ((tryNo-newTryNo) <1) {
+                break; 
+            }
+            tryNo = newTryNo;
+        }
+        
+        return tryNo;
+	}
+
+}

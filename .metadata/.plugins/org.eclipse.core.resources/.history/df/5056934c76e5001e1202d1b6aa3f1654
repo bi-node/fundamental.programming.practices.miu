@@ -1,0 +1,71 @@
+package LinkedList;
+
+import java.awt.HeadlessException;
+
+public class SinglyQueueList {
+	Node front, rear;
+	
+	private class Node{
+		int data;
+		Node next;
+	}
+	
+	public void add(int val)
+	{
+		Node n=new Node();
+		n.data=val;
+		if(isEmpty())
+		{
+			front=n;
+			rear=n;
+			System.out.println(front.data);
+			
+		}
+		else {
+			Node temp=front;
+			
+			while(temp!=rear)
+			{
+				temp=temp.next;
+				System.out.println(temp.data+"dfa");
+			
+			}
+			temp.next=n;
+			rear.next=n;
+			rear=n;
+			
+		}
+		
+
+		
+	}
+	
+	public boolean isEmpty()
+	{
+			return front==null;
+	}
+	
+	public String toString()
+	{
+		String s="";
+		Node temp=front;
+		while(temp!=rear)
+		{
+			s+=" "+temp.data;
+		}
+		
+		return s;
+	}
+	
+	
+public static void main(String[] args) {
+	SinglyQueueList sql=new SinglyQueueList();
+	sql.add(45);
+	sql.add(33);
+	sql.add(77);
+	sql.add(77);
+System.out.println(sql.toString());
+	
+}
+
+}

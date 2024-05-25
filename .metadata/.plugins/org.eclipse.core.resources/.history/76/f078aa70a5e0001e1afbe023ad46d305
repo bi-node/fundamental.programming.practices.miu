@@ -1,0 +1,16 @@
+package linklist;
+//Node 
+class Node{
+	
+}
+
+
+
+
+
+//Linked List class
+public class LinkedList{
+	public static void main(String[] args) {
+		
+	}
+}

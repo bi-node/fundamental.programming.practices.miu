@@ -1,0 +1,22 @@
+package easy;
+
+public class Test {
+	public static void main(String[] args) {
+		Test t=new Test();
+		System.out.println(t.gcdOfStrings("ABABAB", "ABAB"));
+		
+	}
+public String gcdOfStrings(String str1, String str2) {
+	int lenA=str1.length();
+	int lenB=str2.length();
+	if(lenA<lenB) return "";
+	for(int i=lenB-1; i>=0; i--)
+	{
+		String temp1=str2.substring(0,i);
+		System.out.println(temp1);
+	}
+	return "";
+        
+    }
+
+}

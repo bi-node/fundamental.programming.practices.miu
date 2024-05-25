@@ -1,0 +1,22 @@
+package dotjava;
+
+import javax.swing.*;
+
+public class Login extends JFrame {
+	Login() {
+
+		setBounds(350, 200, 800, 500);
+		setLayout(null);
+		setVisible(true);
+		
+		
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Login();
+
+	}
+
+}

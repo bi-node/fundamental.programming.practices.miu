@@ -1,0 +1,34 @@
+package easy;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import medium.MaxSubarrayLength;
+
+public class FrequencyValuesArray {
+	public static void main(String[] args) {
+		MaxSubarrayLength test=new MaxSubarrayLength();
+		int[] arr= {1,2,3,1,2,3,1,2};
+		int k=2;
+		System.out.println(test.maxSubarrayLength(arr, k));
+		
+	}
+	
+	public int[] findingFrequency(int[] a)
+	{
+		Map<Integer, Integer> mapfrequency=new HashMap<Integer, Integer>();
+		
+		for(int element: a)
+		{
+			mapfrequency.put(element, mapfrequency.getOrDefault(element, 0)+1);
+		}
+		
+		for(Map.Entry<Integer, Integer> entry: mapfrequency.entrySet())
+		{
+			System.out.println("\""+entry.getKey()+"\"       : "+entry.getValue());
+		}
+		return a;
+		
+	}
+
+}

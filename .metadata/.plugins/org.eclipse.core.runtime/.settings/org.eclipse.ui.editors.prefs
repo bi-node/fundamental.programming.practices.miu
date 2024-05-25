@@ -1,0 +1,10 @@
+AbstractTextEditor.Color.Background=28,31,34
+AbstractTextEditor.Color.Background.SystemDefault=false
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
+comment_stylePreferences=NONE
+comment_text=false
+eclipse.preferences.version=1
+hyperlinkColor=255,0,255
+lineNumberRuler=true
+spellingEnabled=true

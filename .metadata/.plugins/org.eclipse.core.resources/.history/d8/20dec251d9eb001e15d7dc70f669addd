@@ -1,0 +1,51 @@
+package easy;
+
+import java.util.Arrays;
+
+import javax.sound.midi.Soundbank;
+
+public class MergeArray {
+	public static void main(String[] args) {
+		int[] a= {0,3,5,8,10,0,0,0,0};
+		int[] b= {1,2,7,9};
+		int m=5, n=4;
+		mergeArray(a, m, b, n);
+	
+		
+		
+		
+	}
+	
+	public static void mergeArray(int[] a, int m, int[] b, int n)
+	{
+		for(int i=0; i<m; i++)
+		{
+			if(a[i]>b[0])
+			{
+				int temp=a[i];
+				a[i]=b[0];
+				b[0]=temp;
+				int aux;
+				for(int j=0; j<n-1; j++)
+				{
+					if(b[j]<b[j+1]) break;
+					else {
+						aux=b[j];
+						b[j]=b[j+1];
+						b[j+1]=aux;
+					}
+				}
+	
+			}
+		}
+		for(int i=0; i<n; i++)
+		{
+			a[m+i]=b[i];
+		}
+		System.out.println(Arrays.toString(a));
+		
+	}
+	
+	
+
+}

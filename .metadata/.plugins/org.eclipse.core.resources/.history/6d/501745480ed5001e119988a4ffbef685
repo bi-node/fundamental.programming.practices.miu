@@ -1,0 +1,37 @@
+package dotjava;
+
+
+import java.awt.Color;
+import java.awt.Image;
+
+import javax.swing.*;
+
+public class Login extends JFrame {
+	Login() {
+
+		setBounds(350, 200, 800, 500);
+		setLayout(null);
+		setVisible(true);
+		getContentPane().setBackground(Color.cyan);
+		
+		ImageIcon i1=new ImageIcon(this.getClass().getResource("dest8.jpg"));
+		Image i2=i1.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT);
+		ImageIcon i3=new ImageIcon(i2);
+		
+		
+		JLabel lbLabel=new JLabel(i3);
+		lbLabel.setBounds(10,10,100,100);
+		add(lbLabel);
+		
+		
+		
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Login();
+
+	}
+
+}

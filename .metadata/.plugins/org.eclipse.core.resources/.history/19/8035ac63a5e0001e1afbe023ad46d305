@@ -1,0 +1,38 @@
+package linklist;
+class Node{
+	int data;
+	Node next;
+	Node head=null;
+	
+	Node(int data){
+		this.data=data;
+		next=null;
+	}
+	//add data
+	void add(int data)
+	{
+		if(head==null)
+		{
+			head.data=data;
+			head.next=null;
+		}
+		else {
+			{
+				Node n=new Node(data);
+				while(head.next!=null)
+				{
+					head=head.next;		
+				}
+				n.next=null;
+				
+			}
+		}
+		
+	}
+	//end of add
+}
+
+public class LinkedList {
+	
+
+}
